@@ -125,7 +125,7 @@ while (choice == "A" or choice == "B"):
     
 
 
-print("Thanks for playing! I'm looking forward for an interview oppertunity! ^ w ^") 
+print("Thanks for playing!") 
 
 
 
