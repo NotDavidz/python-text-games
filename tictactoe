@@ -52,7 +52,7 @@ def conv():
 def players():
     global choice_vector
     printBoard()
-    choice_vector = str.upper(input("This is " + turn + "'s turn, enter a coordinate \"Letter, Number\": ")).split(",",1)
+    choice_vector = str.upper(input("This is " + turn + "'s turn, enter a coordinate \"Letter,Number\": ")).split(",",1)
     if conv():
         if updateBoard(int(choice_vector[0]),int(choice_vector[1]), "O" if symbol else "X", True):
             print("Spot Taken, try another")
@@ -78,7 +78,7 @@ def bot():
     global choice_vector
     printBoard()
     if turn == ("Player 1"):
-        choice_vector = str.upper(input("This is your turn, enter a coordinate \"Letter, Number\": ")).split(",",1)
+        choice_vector = str.upper(input("This is your turn, enter a coordinate \"Letter,Number\": ")).split(",",1)
         if conv():
             if updateBoard(int(choice_vector[0]),int(choice_vector[1]), "O" if symbol else "X", True):
                 print("Spot Taken, try another")
